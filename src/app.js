@@ -7,7 +7,7 @@ const routes = require('./routes/index.js');
 
 require('./db.js');
 const corsOptions ={
-  origin:'*', 
+  origin:'https://front-app-country.vercel.app/', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
