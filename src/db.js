@@ -7,9 +7,7 @@ const {
   DB_USER, DB_PASSWORD,DB_HOST,DB_NAME,DB_PORT
 } = process.env;
 
-let sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}${DB_PORT}/${DB_NAME}`,
-  {logging:false, native: false}
-);
+let sequelize = new Sequelize(`postgresql://postgres:XFjVhHpAc8bknKHGju9Q@containers-us-west-67.railway.app:5916/railway`);
 
 //  process.env.NODE_ENV === "production"
 // ? new Sequelize({
